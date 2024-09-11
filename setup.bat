@@ -1,7 +1,5 @@
 @echo off
-REM Bu dosya Python ortamında requirements.txt dosyasındaki kütüphaneleri kurar.
 
-REM Python ve pip'in sistem PATH'inde olduğunu doğrulamak
 python --version
 if errorlevel 1 (
     echo Python bulunamadi. Lütfen Python'un yüklü olduğundan ve PATH'e eklendiğinden emin olun.
@@ -14,7 +12,6 @@ if errorlevel 1 (
     exit /b 1
 )
 
-REM requirements.txt dosyasındaki kütüphaneleri kurma
 echo requirements.txt dosyasındaki kütüphaneler kuruluyor...
 pip install -r requirements.txt
 
